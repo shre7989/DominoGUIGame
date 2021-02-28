@@ -51,7 +51,12 @@ public class GameUI{
      * @param computer - computer who plays the game
      */
     public String Update(Player computer, Boneyard boneyard){
-        String update = String.format("Computer has %d Dominoes\n", computer.getHands().size()) + String.format("Boneyard contains %d Dominoes\n", boneyard.getBones().size());
+        String computerUpdate, boneyardUpdate;
+
+        computerUpdate = String.format("Computer has %d Dominoes\n", computer.getHands().size());
+        boneyardUpdate = String.format("Boneyard contains %d Dominoes\n", boneyard.getBones().size());
+
+        String update = computerUpdate + boneyardUpdate;
         return update;
     }
 
@@ -61,14 +66,22 @@ public class GameUI{
      * @param human - human player who plays the game
      * @param computer - computer player who plays the game
      */
-    public String gameOver(Player human, Player computer/*, Label gameUpdates*/){
+    public String gameOver(Player human, Player computer){
         String gameOver;
-        gameOver = String.format("Game Over!!!\nHuman Score: %d\nComputer Score: %d\n",human.getScore(), computer.getScore());
+        String humanWins;
+        String compWins;
+        int hScore, cScore;
+
+        hScore = human.getScore();
+        cScore = computer.getScore();
+        humanWins = String.format("The winner is human with %d points\n",hScore);
+        compWins = String.format("The winner is computer with %d points\n",cScore);
+        gameOver = String.format("Game Over!!!\nHuman Score: %d\nComputer Score: %d\n",hScore,cScore);
 
         if(human.getScore() <= computer.getScore()){
-            gameOver = gameOver + String.format("The winner is human with %d points\n",human.getScore());
+            gameOver = gameOver + humanWins;
         }
-        else gameOver = gameOver + String.format("The winner is computer with %d points\n", computer.getScore());
+        else gameOver = gameOver + compWins;
         return gameOver;
     }
 }
