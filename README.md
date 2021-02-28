@@ -11,7 +11,7 @@
 - **Give valid inputs on the text field**
     - index => only non-negative integers with the constraint (i.e 0 < index < player.getHands().size())
     - place => only enter "l" or "r"
-    - rotate => only enter "l" or "r"
+    - rotate => only enter "y" or "n"
 - **play:** Press the play button to play your move. 
     - You cannot play until you have a valid input in the textfields above the play button.
     - You cannot play a invalid domino on the gameBoard.
