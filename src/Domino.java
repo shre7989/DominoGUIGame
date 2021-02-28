@@ -43,7 +43,17 @@ public class Domino {
      * @return - true if match and false if no match
      */
     public boolean isMatch(Domino match){
-        return (this.left == match.left || this.left == match.right || this.right == match.right || this.right == match.left);
+        boolean leftAndLeft;
+        boolean leftAndRight;
+        boolean rightAndRight;
+        boolean rightAndLeft;
+
+        leftAndLeft = (this.left == match.left);
+        leftAndRight = (this.left == match.right);
+        rightAndRight = (this.right == match.right);
+        rightAndLeft = (this.right == match.left);
+
+        return (leftAndLeft || leftAndRight || rightAndRight || rightAndLeft);
     }
 
     /**
@@ -69,6 +79,7 @@ public class Domino {
      */
     public void rotate(){
         int temp;
+
         temp = this.left;
         this.left = this.right;
         this.right = temp;
