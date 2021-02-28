@@ -13,14 +13,14 @@
     - place => only enter "l" or "r"
     - rotate => only enter "l" or "r"
 - **play:** Press the play button to play your move. 
-        - You cannot play until you have a valid input in the textfields above the play button.
-        - You cannot play a invalid domino on the gameBoard.
-        - you will automatically draw a domino if you do not have any playable dominos.
+    - You cannot play until you have a valid input in the textfields above the play button.
+    - You cannot play a invalid domino on the gameBoard.
+    - you will automatically draw a domino if you do not have any playable dominos.
 - **draw:** Press the draw button to draw from the boneYard.
-        - you cannot draw if you have a playable domino in hand.
-        - you cannot draw if the boneyard is empty.
+    - you cannot draw if you have a playable domino in hand.
+    - you cannot draw if the boneyard is empty.
 - **quit:** Press quit to end the game.
-        - you will automatically quit the game if the game ends.
-        - the resulting score of the players and the winner of the game is declared when the game ends.
-        - you can quit the game before the game ends if you press the quit button.
+    - you will automatically quit the game if the game ends.
+    - the resulting score of the players and the winner of the game is declared when the game ends.
+    - you can quit the game before the game ends if you press the quit button.
 
