@@ -19,6 +19,7 @@
 - **draw:** Press the draw button to draw from the boneYard.
     - you cannot draw if you have a playable domino in hand.
     - you cannot draw if the boneyard is empty.
+    - you will continously draw from the boneyard until you find a matching piece able to extend the line of play.
 - **quit:** Press quit to end the game.
     - you will automatically quit the game if the game ends.
     - the resulting score of the players and the winner of the game is declared when the game ends.
