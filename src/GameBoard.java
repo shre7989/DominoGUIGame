@@ -48,7 +48,13 @@ public class GameBoard {
      * @return - true if match and false otherwise
      */
     public boolean findMatch(Domino domino){
-        return (domino.isMatchLeft(this.getBoard().getFirst())) || (domino.isMatchRight(this.getBoard().getLast()));
+        boolean matchLeft;
+        boolean matchRight;
+
+        matchLeft = domino.isMatchLeft(this.getBoard().getFirst());
+        matchRight = domino.isMatchRight(this.getBoard().getLast());
+
+        return (matchLeft || matchRight);
     }
 }
 
