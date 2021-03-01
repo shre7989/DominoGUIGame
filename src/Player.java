@@ -39,10 +39,12 @@ public class Player {
      */
     public void play(Domino domino, GameBoard board, String place, String rotate){
         if(board.getBoard().isEmpty() || board.findMatch(domino) || domino.isWild()){
+
             this.getHands().remove(domino);
-            if(rotate.equals("y")) domino.rotate();
-            if(place.equals("l")) board.getBoard().addFirst(domino);
+            if (rotate.equals("y")) domino.rotate();
+            if (place.equals("l")) board.getBoard().addFirst(domino);
             else board.getBoard().addLast(domino);
+
         }
     }
 
