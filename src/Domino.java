@@ -93,4 +93,8 @@ public class Domino {
         return ((this.left == 0) && (this.right == 0));
     }
 
+    public boolean isValid(GameBoard board){
+        if(board.getBoard().isEmpty() || board.findMatch(this)) return true;
+        else return false;
+    }
 }
