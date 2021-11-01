@@ -1,4 +1,4 @@
-**Instructions on how to play the Domino game:**
+# Getting Started
 
 **Domino Index:** the index for the dominos for the player starts from 0, visually on the screen the left most domino is 0, and the index increases as we move right.
 
@@ -6,7 +6,7 @@
 
 **Computer:** A computer is a player who automatically plays the domino game without any external guidance.
 
-**Tutorial:**__
+# Tutorial:
 - **Run the application**
 - **Give valid inputs on the text field**
     - index => only non-negative integers with the constraint (i.e 0 < index < player.getHands().size())
